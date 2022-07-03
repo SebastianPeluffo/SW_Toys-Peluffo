@@ -1,0 +1,319 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+html {
+    font-size: 62, 5%
+}
+
+h1 {
+    color: gold;
+    font-style: italic;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+    color: gold;
+}
+footer{
+    background-color: rgb(206, 23, 23);
+    display: flex;
+    flex-direction: row;
+  grid-area: footer;
+    margin: 10px;
+}
+
+.contenedor {
+    background-image: url(../imagenes/fONDO.webp);
+  
+    
+
+    }
+    .header {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(255, 0, 0);
+        z-index: 10000;
+        padding-left: 120px;
+        padding-right: 120px;
+        box-shadow: 0px 1px 20px 0px rgb(103, 102, 105);
+          grid-area: header;
+        }
+    .menu {
+        list-style: none;
+        font-size: 0;
+        margin-top: 30px;
+     }
+      
+     .menu li {
+        display: inline-block;
+        padding-left: 60px;
+     }
+      
+     .menu a{
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: gold;
+     }
+      
+     .menu a:hover {
+        font-weight: 700;
+        color: gold;
+     }
+.main{
+grid-area: main;
+}
+h3{
+    color: rgb(193, 224, 15);
+    margin-left: 40pc;
+    margin-right: 40pc;
+    margin-top: 100px; 
+    font-size: x-large;
+
+}
+.parrafoAzul {
+    color: rgb(47, 104, 189);
+    font-style: italic;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: large;
+    margin:50px 10pc 5pc 10pc;
+    padding: 50px;
+    border-style: double;
+    grid-area: parrafoAzul;
+}
+.imagenes{
+    justify-content: center;
+    width: 100%;
+   
+    display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: auto auto;
+  grid-template-areas: 
+  "img1   img2"
+  "img3   img4";
+  justify-items: center;
+ 
+   
+    border-top: double red;
+}
+.img1{
+    grid-area: img1;
+    width: 150px;
+    height: 200px;
+}
+.img2{
+    grid-area: img2;
+height: 200px;
+width: 150px;
+}
+.img3{
+    grid-area: img3;
+    height: 200px;
+    width: 150px;
+}
+.img4{
+    grid-area: img4;
+    width: 150px;
+    height: 200px;
+}
+@media screen and (max-width: 500px) {
+
+    /* - - - - CONTENEDORES - - - - */
+
+    .contenedor {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1 auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "imagenes"
+        "footer"
+        ;
+}
+.imagenes{
+            justify-content: center;
+            width: 100%;
+           
+            display: grid;
+           grid-template-columns: 100% ;
+           grid-template-rows: auto auto auto auto;;
+          grid-template-areas: 
+          "img1"
+          "img2"
+          "img3"
+          "img4";
+          justify-items: center;
+         
+           
+            border-top: double red;
+        }
+    }
+    .body__contacto{
+        background-image: url(../imagenes/fONDO.webp);
+    }
+    
+    
+    /*bordes para el subtitulo*/
+    .nosotros{
+        color: rgba(54, 54, 190, 0.678);
+        padding-top: 1.5pc;
+        padding-bottom: 1.5pc;
+        text-align: center;
+        border-top:double rgb(60, 60, 185);
+        border-left: double rgb(60, 60, 185);
+        border-right: double rgb(60, 60, 185);
+    
+    }
+    /*edicion de texto*/
+    .redes{
+        color: bisque;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+       
+    }
+   
+    .prioridades{
+        color: bisque;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-area: formulario;
+    
+    }
+    .redes__titulo{
+        color: rgba(54, 54, 190, 0.678);
+    }
+    .prio__titulo{
+        color: rgba(54, 54, 190, 0.678);
+    }
+    .love{
+        color: rgb(204, 204, 27);
+        text-align: center;
+        border-left: double rgb(60, 60, 185);
+        border-right: double rgb(60, 60, 185);
+        border-bottom: double blue;
+        margin-bottom: 20px;
+    
+    }
+    .Fcontact{
+        color: rgb(96, 9, 238);
+        background-color: gold;
+    }
+    /*edicion de fondo del fieldset*/
+    .fieldset{
+        color: rgba(12, 12, 194, 0.692);
+        background-color: gold;
+        background-image: url(../imagenes/SW\ Toys.png);
+       
+    }
+    /*edicion general de colores y tamaños para seccion  de contacto*/
+    .terms{
+        color: gold;
+      
+    }
+    .aceptar{
+        color: brown;
+    }
+    .domicilio{
+        color: gold;
+       background-color: blue;
+       background-image: url(../imagenes/Empire-.png);
+     
+    }
+    .body__contacto{
+        background-image: url(../imagenes/fONDO.webp);
+        display: grid;
+        grid-template-columns: 100%;
+       grid-template-rows: auto auto auto auto auto auto auto auto auto;
+       grid-template-areas:
+       "head_cont  head_cont"
+       "info  info"
+       "info  info"
+       "info  info"
+       "field  domi"
+       "field domi"
+       "termo  termo"
+       "termo  termo"
+       "footer  footer" ;
+    }
+    .termo{
+        grid-area: termo;
+    }
+    .field{
+        grid-area: field;
+    }
+    .domi{
+        grid-area: domi;
+    }
+    .head_cont{
+        grid-area: head_cont;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(255, 0, 0);
+        z-index: 10000;
+        padding-left: 120px;
+        padding-right: 120px;
+        box-shadow: 0px 1px 20px 0px rgb(103, 102, 105);
+    }
+
+    .info{
+        grid-area: info;
+    }
+    
+    .encabezado__menu {
+        list-style: none;
+        font-size: 0;
+        margin-top: 30px;
+     }
+      
+     .encabezado__menu li {
+        display: inline-block;
+        padding-left: 60px;
+     }
+      
+     .encabezado__menu a{
+        font-size: 18px;
+        font-weight: 300;
+        text-decoration: none;
+        color: gold;
+     }
+      
+     .encabezado__menu a:hover {
+        font-weight: 700;
+        color: gold;
+     }
+     @media screen and (max-width 500px) {
+        .body__contacto{
+        
+            display: grid;
+            grid-template-columns: 100%;
+           grid-template-rows: auto auto auto auto auto auto auto auto auto;
+           grid-template-areas:
+           "head_cont  head_cont"
+           "info"
+           "info"
+           "info"
+           "field"
+           "field"
+           "termo"
+           "termo"
+           "footer" ;
+        }
+        
