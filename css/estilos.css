@@ -257,6 +257,7 @@ width: 150px;
     .domi{
         grid-area: domi;
     }
+    
     .head_cont{
         grid-area: head_cont;
         height: 80px;
