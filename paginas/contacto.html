@@ -6,24 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <!--puente a la carpeta de css-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../imagenes/SW Toys.png" type="image/x-icon">
 </head>
-<nav >
+
     <!--cuerpo de la pagina-->
 <body class="body__contacto">
+    
+    <div>
+
     <!--titulo-->
-    <header class="head_cont"><h1 class="h1 animate__animated animate__fadeInUpBig">Contacto </h1>
+    <header class="head_cont">
+        <h1 class="h1 animate__animated animate__fadeInUpBig">Contacto </h1>
         <!--menu--> 
-        <nav class="encabezado__menu" id="arriba">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light encabezado__menu">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a href="Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Star_wars.html">Star Wars</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="Hot_toys.html">Arte</a>
+                  </li>
+                  <li> <a href="../index.html">Index</a>
+                </li>
+                </ul>
+              
+              </div>
+            </div>
+          </nav>
+       <!--  <nav class="encabezado__menu" id="arriba">
           <ul>
             <li> <a href="Nosotros.html">Nosotros</a></li>
             <li> <a href="Star_wars.html">Star Wars</a></li>
             <li> <a href="Hot_toys.html">Arte</a></li>
             <li> <a href="../index.html">Index</a></li>
           </ul>
-        </nav>
+        </nav> -->
         </header>
         <Section class="info">
             <!--section con informacion de la pagina-->
@@ -48,6 +78,41 @@
      <li>socialdistancing@gmail.com</li>
     </ul>
     </li>
+</div>  
+<h3>Empleados</h3>
+<div class="empleados row"> 
+   
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Empleado</th>
+            <th scope="col">Del mes</th>
+            <th scope="col">Del año</th>
+            <th scope="col">Del siglo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Marketing</th>
+            <td>Hughie</td>
+            <td>Seba</td>
+            <td>Yoda</td>
+          </tr>
+          <tr>
+            <th scope="row">RH</th>
+            <td>Andrea</td>
+            <td>Plo Kun</td>
+            <td>Yoda</td>
+          </tr>
+          <tr>
+            <th scope="row">Delivery</th>
+            <td >Nico</td>
+            <td>Larry</td>
+            <td>Darth Bane</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
 </Section>
     
   <!--fieldset para la informacion de contacto-->
@@ -121,11 +186,15 @@
 
 </form>
 </div>
-<a  class="arriba"href="#arriba">Volver arriba</a>
+
+
 <!--footer-->
 <hr>
 <footer><p>El contenido de serie, las especificaciones del producto, las fechas de lanzamiento y los precios están sujetos a cambios. SW Toys es la marca registrada y los derechos de autor de SW Toys Inc.
-Todos los derechos reservados.</p></footer>
+Todos los derechos reservados.</p>
 
+
+</footer>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
