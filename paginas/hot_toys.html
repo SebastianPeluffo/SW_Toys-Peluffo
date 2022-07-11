@@ -5,21 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Toys</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="shortcut icon" href="../imagenes/SW Toys.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <!--Etiqueta body para cuerpo de pagina-->
-<body>
-    <header><h1>Hot Toys </h1> 
-        <nav  class="encabezado__menu" id="arriba">
-<!--lista no ordenada para el menu-->
-          <ul>
-            <li> <a href="Contacto.html">Contacto</a></li>
-            <li> <a href="Nosotros.html">Nosotros</a></li>
-            <li> <a href="Star_wars.html">Star Wars</a></li>
-            <li> <a href="../index.html">Index</a></li>
-          </ul>
-        </nav>
+<body class="contenedor">
+    <header class="header"><h1>Hot Toys </h1> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light encabezado__menu">
+                <div class="container-fluid">
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a href="Nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="Star_wars.html">Star Wars</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a href="contacto.html">Contacto</a>
+                      </li>
+                      <li> <a href="../index.html">Index</a>
+                    </li>
+                    </ul>
+                  
+                  </div>
+                </div>
+              </nav>
         <hr>
 <!--tabla a futuro sera cambiada -->
 
@@ -28,51 +45,51 @@
                 <th class="blueTable">Pintura</th>
                 <th class="blueTable">precio</th>
                 <th class="blueTable">disponibilidad</th>
-        
-                <tr>
-        <td>Clone Army</td>
-        <td>500k</td>
-        <td>2</td>
-        
-                </tr>
-                <tr>
-        <td>Droid Army</td>
-        <td>300k</td>
-        <td>5</td>
-        
-                </tr>
-                <th>Pintura</th>
-                <th>precio</th>
-                <th>disponibilidad</th>
-        
-                <tr>
-        <td>Clone trooper</td>
-        <td>100k</td>
-        <td>10</td>
-        
-                </tr>
-                <tr>
-        <td>Kashyyyk</td>
-        <td>200k</td>
-        <td>5</td>
-        
-                </tr>
-                <th>Pintura</th>
-                <th>precio</th>
-                <th>disponibilidad</th>
-        
-                <tr>
-        <td>Imperial Army</td>
-        <td>150k</td>
-        <td>2</td>
-        
-                </tr>
-                <tr>
-        <td>Hoth</td>
-        <td>200k</td>
-        <td>5</td>
-        
-                </tr>
+                
+                        <tr>
+                <td>Clone Army</td>
+                <td>500k</td>
+                <td>2</td>
+                
+                        </tr>
+                        <tr>
+                <td>Droid Army</td>
+                <td>300k</td>
+                <td>5</td>
+                
+                        </tr>
+                        <th>Pintura</th>
+                        <th>precio</th>
+                        <th>disponibilidad</th>
+                
+                        <tr>
+                <td>Clone trooper</td>
+                <td>100k</td>
+                <td>10</td>
+                
+                        </tr>
+                        <tr>
+                <td>Kashyyyk</td>
+                <td>200k</td>
+                <td>5</td>
+                
+                        </tr>
+                        <th>Pintura</th>
+                        <th>precio</th>
+                        <th>disponibilidad</th>
+                
+                        <tr>
+                <td>Imperial Army</td>
+                <td>150k</td>
+                <td>2</td>
+                
+                        </tr>
+                        <tr>
+                <td>Hoth</td>
+                <td>200k</td>
+                <td>5</td>
+                
+                        </tr>
         </table>
 <!--imagenes a futuro seran ordenadas con flexbox o grid-->
 
@@ -88,8 +105,8 @@
 <!--pie de pagina-->
 
     <hr>
-    <footer><p>El contenido de serie, las especificaciones del producto, las fechas de lanzamiento y los precios están sujetos a cambios. SW Toys es la marca registrada y los derechos de autor de SW Toys Inc.
+    <footer><p class="footer_text">El contenido de serie, las especificaciones del producto, las fechas de lanzamiento y los precios están sujetos a cambios. SW Toys es la marca registrada y los derechos de autor de SW Toys Inc.
 Todos los derechos reservados.</p></footer>
-
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

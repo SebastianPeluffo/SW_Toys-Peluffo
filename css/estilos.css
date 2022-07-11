@@ -17,19 +17,24 @@ h1 {
     color: gold;
 }
 footer{
-    background-color: rgb(206, 23, 23);
+    border-bottom: double blue;
+    border-top: double blue;
+    border-right: double blue;
+    border-left: double blue;
+
     display: flex;
     flex-direction: row;
   grid-area: footer;
     margin: 10px;
+}
+.footer_text{
+  color: blue;
 }
 .row{
     
 }
 .contenedor {
     background-image: url(../imagenes/fONDO.webp);
-  
-    
 
     }
     .header {
@@ -238,6 +243,11 @@ width: 150px;
         color: gold;
       
     }
+ 
+        
+       
+       
+    
     .aceptar{
         color: brown;
     }
@@ -265,11 +275,10 @@ width: 150px;
     }
     .termo{
         grid-area: termo;
-        border-top-style: double;
-        border-color: gold;
-        border-bottom: double;
-        border-left: double;
-        border-right: double;
+        border-top: double gold;
+        border-left: double gold;
+        border-right: double gold;
+        border-bottom: double gold;
     }
     .field{
         grid-area: field;
@@ -339,5 +348,86 @@ width: 150px;
            "termo"
            "footer" ;
         }
+        }
+        .coleccion{
+            color: gold;
+          
+        }
+        .historia__titulo{
+            color: gold;
+        }
+        .historia{
+            color: rgb(60, 60, 185);
+        }
+        .Amsrillo__catalogo{
+            color: gold;
+            margin-top: 20px;
+        }
+        .hr{
+            color: rgb(200, 255, 0);
+        }
+        /*decoracion de las tablas*/
+        .table{
+            color: rgb(60, 60, 185);
+            font-style: italic;
+            border-color: rgb(60, 60, 185);
+        }
+        .blueTable{
+            color: rgb(185, 60, 60);
+        }
+        /*cambio del tamaño de las imagenes */
+        .imagenes_sw{
+            width: 100%;
+            height: 600px;
+            display: grid;
+            grid-template-rows: 33% 33% 33%
+        }
+        .atat{
+            height: 200px;
+            width: 200px;
+        }
+        .atte{
+            height: 200px;
+            width: 200px;
+        }
+        .atap{
+            height: 200px;
+            width: 200px;
+        }
+        .CT{
+            height: 200px;
+            width: 200px;
+        }
+        .CT2{
+            height: 200px;
+            width: 200px;
+        }
+        .CT3{
+            height: 200px;
+            width: 200px;
+        }
+        .CA{
+            height: 200px;
+            width: 200px;
+        }
+        .DA{
+            height: 200px;
+            width: 200px;
+        }
+        .CTP{
+            height: 200px;
+            width: 200px;
+        }
+        .Kashyyyk{
+            height: 200px;
+            width: 200px;
+        }
+        .IA{
+            height: 200px;
+            width: 200px;
+        }
+        .hoth{
+            height: 200px;
+            width: 200px;
         }
         

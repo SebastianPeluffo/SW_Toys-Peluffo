@@ -12,13 +12,37 @@
     <link rel="stylesheet" href="CSS/estilos.css"/>  
 </head>
 <body class="contenedor container-fluid">
-  <div class="col-xs-12">
+  <div>
     <!--Titulo-->
      <header class="header">
       <h1 class="animate__animated animate__fadeInUpBig" >SW Toys </h1> 
       <!--Menu-->
-      
-       <nav class="menu"id="arriba">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light encabezado__menu">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="paginas/Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="paginas/Nosotros.html">Nosotros</a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="paginas/Star_wars.html">Star Wars</a>
+              </li>
+              <li>  <a href="paginas/Hot_toys.html">Arte</a>
+            </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+       <!-- <nav class="menu"id="arriba">
          <ul >
             <li> <a href="paginas/Contacto.html">Contacto</a></li>
             <li> <a href="paginas/Nosotros.html">Nosotros</a></li>
@@ -26,7 +50,7 @@
             <li> <a href="paginas/Hot_toys.html">Arte</a></li>
          </ul>
        </nav>
-   
+    -->
     </header>
         <main class="main">
           <!--parte principal de la pagina-->
@@ -41,19 +65,23 @@
   </div>
     <!--seccion a cambiar con grids/flexbox-->
     <h3>Juguetes Destacados</h3>
-  <section class="imagenes col-xs-12">
+  <section class="imagenes">
      
         
         
         
-        <div><img class="img1"src="imagenes/stormtrooper.jpg" alt="stormtrooper"></div>
-        <div><img class="img2" src="imagenes/darth-vader.jpg" alt="darth-vader"></div>
-        <div><img class="img3" src="imagenes/general-obi-wan-.jpg" alt="general-obi-wan-"></div>
-        <div><img class="img4" src="imagenes/the-mandalorian.jpg" alt="the-mandalorian"></div>
+        <div><img class="img1"src="imagenes/stormtrooper.jpg" alt="stormtrooper">
+        </div>
+        <div><img class="img2" src="imagenes/darth-vader.jpg" alt="darth-vader">
+        </div>
+        <div><img class="img3" src="imagenes/general-obi-wan-.jpg" alt="general-obi-wan-">
+        </div>
+        <div><img class="img4" src="imagenes/the-mandalorian.jpg" alt="the-mandalorian">
+        </div>
         
         
        
-    </section>
+  </section>
 
        
         
@@ -62,7 +90,7 @@
         <!--footer-->
         <hr>
   <footer class="footer">
-        <p>El contenido de serie, las especificaciones del producto, las fechas de lanzamiento y los precios están sujetos a cambios. SW Toys es la marca registrada y los derechos de autor de SW Toys Inc.
+        <p class="footer_text">El contenido de serie, las especificaciones del producto, las fechas de lanzamiento y los precios están sujetos a cambios. SW Toys es la marca registrada y los derechos de autor de SW Toys Inc.
 Todos los derechos reservados.</p>
   </footer>
 
