@@ -30,9 +30,7 @@ footer{
 .footer_text{
   color: blue;
 }
-.row{
-    
-}
+
 .contenedor {
     background-image: url(../imagenes/fONDO.webp);
 
@@ -52,11 +50,16 @@ footer{
         box-shadow: 0px 1px 20px 0px rgb(103, 102, 105);
           grid-area: header;
         }
+        .nav-item li{
+         
+            color: gold;
+        }
     .menu {
         list-style: none;
         font-size: 0;
         font-style: italic;
         margin-top: 30px;
+        color: gold;
      }
       .table{
         background-color: rgb(255, 68, 0);
@@ -72,6 +75,7 @@ footer{
         font-weight: 500;
         text-decoration: none;
         color: gold;
+        
      }
       
      .menu a:hover {
@@ -81,14 +85,24 @@ footer{
 .main{
 grid-area: main;
 }
-h3{
+.h3_contac{
 display: flex;
 justify-content: start;
-    color: rgb(193, 224, 15);
-    margin-left: 40pc;
-    margin-right: 40pc;
+    color: gold;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 100px; 
     font-size: x-large;
+
+}
+h3{
+    display: flex;
+    justify-content: center;
+        color: gold;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 100px; 
+        font-size: x-large;
 
 }
 
@@ -362,6 +376,8 @@ width: 150px;
         .Amsrillo__catalogo{
             color: gold;
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
         }
         .hr{
             color: rgb(200, 255, 0);
@@ -371,6 +387,7 @@ width: 150px;
             color: rgb(60, 60, 185);
             font-style: italic;
             border-color: rgb(60, 60, 185);
+            margin-top: 5pc;
         }
         .blueTable{
             color: rgb(185, 60, 60);
