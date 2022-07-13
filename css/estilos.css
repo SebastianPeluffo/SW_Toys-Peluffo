@@ -28,7 +28,7 @@ footer{
     margin: 10px;
 }
 .footer_text{
-  color: blue;
+  color: rgb(60, 60, 185);;
 }
 
 .contenedor {
@@ -388,6 +388,7 @@ width: 150px;
             font-style: italic;
             border-color: rgb(60, 60, 185);
             margin-top: 5pc;
+          
         }
         .blueTable{
             color: rgb(185, 60, 60);
@@ -398,6 +399,13 @@ width: 150px;
             height: 600px;
             display: grid;
             grid-template-rows: 33% 33% 33%
+        }
+        .tables{
+            grid-area: tables;
+        }
+        .contenedor__starwars{
+            background-image: url(../imagenes/fONDO.webp);
+      
         }
         .atat{
             height: 200px;
