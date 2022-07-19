@@ -159,7 +159,7 @@ width: 150px;
 }
 @media screen and (max-width: 500px) {
 
-    /* - - - - CONTENEDORES - - - - */
+   
 
     .contenedor {
         display: grid;
@@ -197,7 +197,7 @@ width: 150px;
     }
     
     
-    /*bordes para el subtitulo*/
+  
     .nosotros{
         color: rgba(54, 54, 190, 0.678);
         padding-top: 1.5pc;
@@ -208,7 +208,7 @@ width: 150px;
         border-right: double rgb(60, 60, 185);
     
     }
-    /*edicion de texto*/
+    
     .redes{
         color: bisque;
         display: flex;
@@ -245,14 +245,13 @@ width: 150px;
         color: rgb(96, 9, 238);
         background-color: gold;
     }
-    /*edicion de fondo del fieldset*/
+    
     .fieldset{
         color: rgba(12, 12, 194, 0.692);
         background-color: gold;
         background-image: url(../imagenes/SW\ Toys.png);
        
     }
-    /*edicion general de colores y tamaños para seccion  de contacto*/
     .terms{
         color: gold;
       

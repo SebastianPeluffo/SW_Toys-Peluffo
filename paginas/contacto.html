@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="../imagenes/SW Toys.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
     <!--cuerpo de la pagina-->
@@ -29,6 +29,10 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item"> <a href="../index.html">Index</a>
+                  <li class="nav-item">
+                    <a href="contacto.html">Contacto</a>
+                  </li>
                   <li class="nav-item">
                     <a href="nosotros.html">Nosotros</a>
                   </li>
@@ -39,21 +43,13 @@
                   <li class="nav-item">
                     <a href="hot_toys.html">Arte</a>
                   </li>
-                  <li> <a href="../index.html">Index</a>
-                </li>
+                 
                 </ul>
               
               </div>
             </div>
           </nav>
-       <!--  <nav class="encabezado__menu" id="arriba">
-          <ul>
-            <li> <a href="Nosotros.html">Nosotros</a></li>
-            <li> <a href="Star_wars.html">Star Wars</a></li>
-            <li> <a href="Hot_toys.html">Arte</a></li>
-            <li> <a href="../index.html">Index</a></li>
-          </ul>
-        </nav> -->
+      
       </header>
 <Section class="info">
               <!--section con informacion de la pagina-->
@@ -77,7 +73,7 @@
                       <li>dementeazul17@gmail.com</li>
                       <li>socialdistancing@gmail.com</li>
                       </ul>
-                      </li>
+                      </ol>
                   </div>  
 <h3 class="h3_contac">Empleados</h3>
    <div class="empleados row"> 
@@ -121,18 +117,20 @@
 
         <legend><hr2 class="Fcontact">Formulario de contacto </hr2></legend>
         <form>
+          <label  for="name">name:</label>
+          <label for="last name">last name: </label>
+          <label for="email">email:</label>
+          <label for="password">password</label>
             <ol>
-                    <label  for="name">name:</label>
                     <li><input type="text" placeholder="name" name="name"></li>
     
-                    <label for="last name">last name: </label>
+                  
                     <li><input type="text" placeholder="last name" name="last name"></li>
    
-                    <label for="email">email:</label>
+                   
                     <li><input type="email" placeholder="email" name="email"></li>
     
-                    <label for="password">password</label>
-                    <input type="password" required placeholder="password" name="password">
+                    <li><input type="password" required placeholder="password" name="password"></li>
 
 <!--inputs de genero-->
                     <li><label for="genero">indique su genero</label></li>
@@ -172,8 +170,20 @@
       <!--terminos y condiciones-->
       <fieldset class="terms"><Legend class="t">Terminos y condiciones</Legend>
       
-      <p class="terminos"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nihil, labore praesentium nobis vitae distinctio rem deleniti illo eveniet nisi dolorem est eius vel sunt non ipsa hic alias et.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas natus sunt earum. Voluptates vitae magni sint exercitationem magnam! Dolorum iure non, velit odio natus ex omnis. Repellendus impedit doloremque dolorem!
+      <p class="terminos"> Términos y condiciones
+        Bienvenido al sitio web de SW Toys Inc. (el "Sitio"). El Sitio se proporciona como un servicio a nuestros clientes. Revise los siguientes términos y condiciones de uso, que rigen su uso del Sitio (los "Términos"). El acceso y uso del Sitio está condicionado a la aceptación y cumplimiento de estos Términos. Al acceder al Sitio, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de estos Términos, entonces no tiene permiso para acceder al Sitio. Al usar el Sitio, usted declara y garantiza que es mayor de edad para formar un contrato vinculante o tiene el consentimiento de un padre o tutor mayor de edad.
+        
+        CUENTAS
+        
+        Cuando crea una cuenta en nuestro Sitio, declara y garantiza que tiene más de 18 años y que la información que nos proporciona es precisa, completa y actual en todo momento. Nos reservamos el derecho de rechazar el servicio o cancelar cuentas a nuestro exclusivo criterio.
+        
+        Al crear una Cuenta en nuestro Sitio, acepta suscribirse a boletines, materiales promocionales o de marketing y otra información que podamos enviar. Sin embargo, puede optar por no recibir ninguna o todas estas comunicaciones de nuestra parte siguiendo el enlace para cancelar la suscripción o las instrucciones proporcionadas en cualquier correo electrónico que enviemos.
+        
+        Usted es responsable de mantener la confidencialidad de su cuenta y contraseña, lo que incluye, entre otros, restringir el acceso a su computadora o cuenta. No puede compartir su cuenta, nombre de usuario o contraseña con ninguna otra parte ni usar la cuenta, el nombre de usuario o la contraseña de ninguna otra parte. Usted será el único responsable de todas las actividades realizadas y todas las obligaciones contraídas por usted o a través de su cuenta. Debe notificarnos inmediatamente al darse cuenta de cualquier violación de seguridad o uso no autorizado de su cuenta.
+        
+        No puede usar un nombre de usuario como el nombre de otra persona o entidad o que no esté legalmente disponible para su uso, un nombre o marca comercial que esté sujeto a cualquier derecho de otra persona o entidad que no sea usted, sin la autorización correspondiente. No puede usar como nombre de usuario ningún nombre que sea ofensivo, vulgar u obsceno.
+        
+        En la medida en que el Sitio le permita vincular su cuenta a cualquier red social u otras cuentas en línea, solo podrá vincular sus propias cuentas. Al vincular sus otras cuentas, nos autoriza expresamente a acceder a la información de su cuenta desde esas cuentas de terceros, en su nombre como su agente, y nos permite acceder, usar y, en algunos casos, almacenar la información de su cuenta.
       </p>
     </fieldset>
       <label class="aceptar" for="terminos">aceptas todo?</label>
@@ -195,6 +205,6 @@ Todos los derechos reservados.</p>
 
 
 </footer>
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
