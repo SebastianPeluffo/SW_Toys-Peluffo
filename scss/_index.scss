@@ -132,25 +132,26 @@ h3{
    
     border-top: double red;
 }
+
 .img1{
+    @include size(150px, 200px, );
     grid-area: img1;
-    width: 150px;
-    height: 200px;
+   
 }
 .img2{
+    @include size(150px, 200px, );
     grid-area: img2;
-height: 200px;
-width: 150px;
+
 }
 .img3{
+    @include size(150px, 200px, );
     grid-area: img3;
-    height: 200px;
-    width: 150px;
+  
 }
 .img4{
+    @include size(150px, 200px, );
     grid-area: img4;
-    width: 150px;
-    height: 200px;
+   
 }
 @media screen and (max-width: 500px) {
 

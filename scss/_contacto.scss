@@ -59,13 +59,14 @@
 .Fcontact{
     color: rgb(96, 9, 238);
     background-color: gold;
+    
 }
 
 .fieldset{
     color: rgba(12, 12, 194, 0.692);
     background-color: gold;
-   
-   
+    background-image: url(../imagenes/SW_Toys.png);
+       
 }
 .terms{
     color: gold;
@@ -117,18 +118,7 @@
 
 .head_cont{
     grid-area: head_cont;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    position: sticky;
-    top: 0px;
-    background-color: rgb(255, 0, 0);
-    z-index: 10000;
-    padding-left: 120px;
-    padding-right: 120px;
-    box-shadow: 0px 1px 20px 0px rgb(103, 102, 105);
+@extend .header;
 }
 
 .info{
