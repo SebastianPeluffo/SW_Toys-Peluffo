@@ -17,9 +17,6 @@ $redes: (
     
 }
 
-.footer_cont{
-    background-color: map-get($redes ,Mail)
-}
 
 @mixin size($width, $height){
     width: $width;

@@ -13,9 +13,6 @@
 .Mail {
   color: #eaa505; }
 
-.footer_cont {
-  background-color: #eaa505; }
-
 .body__contacto {
   background-image: url(../imagenes/fONDO.webp); }
 
@@ -137,6 +134,9 @@ a {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
     grid-template-areas: "head_cont  head_cont" "info" "info" "info" "field" "field" "termo" "termo" "footer"; } }
+
+.footer_cont {
+  background-color: #5c5c5c; }
 
 * {
   margin: 0%;
