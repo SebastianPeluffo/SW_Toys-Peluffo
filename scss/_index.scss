@@ -15,12 +15,10 @@ h1 {
     font-size: 55px;
     font-weight: 500;
     color: gold;
+   
 }
 footer{
-    border-bottom: double blue;
-    border-top: double blue;
-    border-right: double blue;
-    border-left: double blue;
+
 
     display: flex;
     flex-direction: row;
@@ -28,11 +26,12 @@ footer{
     margin: 10px;
 }
 .footer_text{
-  color: rgb(60, 60, 185);
+
+  color: rgb(255, 255, 255);
 }
 
 .contenedor {
-    background-image: url(../imagenes/fONDO.webp);
+    background-image: url(../imagenes/AAAAAAAAAA.jpg);
 
     }
     .header {
@@ -93,11 +92,14 @@ justify-content: start;
 h3{
     display: flex;
     justify-content: center;
+    font-family:  'Barlow', sans-serif; 
+    font-weight:700;
         color: gold;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: 100px; 
-        font-size: x-large;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 100px; 
+        font-size: 40px;
+        
 
 }
 
@@ -107,11 +109,11 @@ h3{
 }
 
 .parrafoAzul {
-    color: rgb(47, 104, 189);
-    font-style: italic;
-    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-family: 'Barlow', sans-serif;
     line-height: 1.5;
-    font-size: large;
+    font-size: 20px ;
     margin:50px 10pc 5pc 10pc;
     padding: 50px;
     border-style: double;
@@ -152,6 +154,30 @@ h3{
     @include size(150px, 200px, );
     grid-area: img4;
    
+}
+.img5{
+@include size(150px, 200px, );
+}
+.img6{
+@include size(150px, 200px, );
+}
+.img7{
+@include size(150px, 200px, );
+}
+.img8{
+@include size(150px, 200px, );
+}
+.img9{
+@include size(150px, 200px, );
+}
+.img10{
+@include size(150px, 200px, );
+}
+.img11{
+@include size(150px, 200px, );
+}
+.img12{
+@include size(150px, 200px, );
 }
 @media screen and (max-width: 500px) {
 

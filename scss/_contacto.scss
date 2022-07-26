@@ -14,13 +14,13 @@
     }
 
 .nosotros{
-    color: rgba(54, 54, 190, 0.678);
+    color: rgba(255, 255, 255, 0.678);
     padding-top: 1.5pc;
     padding-bottom: 1.5pc;
     text-align: center;
-    border-top:double rgb(60, 60, 185);
-    border-left: double rgb(60, 60, 185);
-    border-right: double rgb(60, 60, 185);
+    border-top:double rgb(255, 255, 255);
+    border-left: double rgb(255, 255, 255);
+    border-right: double rgb(255, 255, 255);
 
 }
 
@@ -29,7 +29,11 @@
     display: flex;
         flex-direction: column;
         align-items: center;
-       
+    
+        li {
+            background-color: black;
+        }
+
    
 }
 
@@ -48,11 +52,11 @@
     color: rgba(54, 54, 190, 0.678);
 }
 .love{
-    color: rgb(204, 204, 27);
+    color: rgb(255, 255, 255);
     text-align: center;
-    border-left: double rgb(60, 60, 185);
-    border-right: double rgb(60, 60, 185);
-    border-bottom: double blue;
+    border-left: double rgb(255, 255, 255);
+    border-right: double rgb(255, 255, 255);
+    border-bottom: double rgb(255, 255, 255);
     margin-bottom: 20px;
 
 }

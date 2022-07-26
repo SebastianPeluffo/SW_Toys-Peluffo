@@ -29,19 +29,21 @@
   font-size: x-large; }
 
 .nosotros {
-  color: rgba(54, 54, 190, 0.678);
+  color: rgba(255, 255, 255, 0.678);
   padding-top: 1.5pc;
   padding-bottom: 1.5pc;
   text-align: center;
-  border-top: double #3c3cb9;
-  border-left: double #3c3cb9;
-  border-right: double #3c3cb9; }
+  border-top: double white;
+  border-left: double white;
+  border-right: double white; }
 
 .redes {
   color: bisque;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .redes li {
+    background-color: black; }
 
 .prioridades {
   color: bisque;
@@ -57,11 +59,11 @@
   color: rgba(54, 54, 190, 0.678); }
 
 .love {
-  color: #cccc1b;
+  color: white;
   text-align: center;
-  border-left: double #3c3cb9;
-  border-right: double #3c3cb9;
-  border-bottom: double blue;
+  border-left: double white;
+  border-right: double white;
+  border-bottom: double white;
   margin-bottom: 20px; }
 
 .Fcontact {
@@ -153,20 +155,16 @@ h1 {
   color: gold; }
 
 footer {
-  border-bottom: double blue;
-  border-top: double blue;
-  border-right: double blue;
-  border-left: double blue;
   display: flex;
   flex-direction: row;
   grid-area: footer;
   margin: 10px; }
 
 .footer_text {
-  color: #3c3cb9; }
+  color: white; }
 
 .contenedor {
-  background-image: url(../imagenes/fONDO.webp); }
+  background-image: url(../imagenes/AAAAAAAAAA.jpg); }
 
 .header, .head_cont {
   height: 80px;
@@ -225,22 +223,24 @@ a {
 h3 {
   display: flex;
   justify-content: center;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
   color: gold;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 100px;
-  font-size: x-large; }
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 100px;
+  font-size: 40px; }
 
 .empleados {
   display: flex;
   justify-content: start; }
 
 .parrafoAzul {
-  color: #2f68bd;
-  font-style: italic;
-  font-weight: bolder;
+  color: white;
+  font-weight: lighter;
+  font-family: 'Barlow', sans-serif;
   line-height: 1.5;
-  font-size: large;
+  font-size: 20px;
   margin: 50px 10pc 5pc 10pc;
   padding: 50px;
   border-style: double;
@@ -275,6 +275,38 @@ h3 {
   width: 150px;
   height: 200px;
   grid-area: img4; }
+
+.img5 {
+  width: 150px;
+  height: 200px; }
+
+.img6 {
+  width: 150px;
+  height: 200px; }
+
+.img7 {
+  width: 150px;
+  height: 200px; }
+
+.img8 {
+  width: 150px;
+  height: 200px; }
+
+.img9 {
+  width: 150px;
+  height: 200px; }
+
+.img10 {
+  width: 150px;
+  height: 200px; }
+
+.img11 {
+  width: 150px;
+  height: 200px; }
+
+.img12 {
+  width: 150px;
+  height: 200px; }
 
 @media screen and (max-width: 500px) {
   /* - - - - CONTENEDORES - - - - */
