@@ -256,7 +256,7 @@ h3 {
   justify-content: center;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "trop  gvader" "trooper vader" "ckenobi   cmando" "kenobi mando";
   justify-items: center;
@@ -314,25 +314,7 @@ h3 {
   width: 150px;
   height: 200px; }
 
-@media screen and (min-width: 320px) {
-  /* - - - - CONTENEDORES - - - - */
-  .contenedor {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1 auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header" "main" "imagenes" "footer"; }
-  .imagenes {
-    justify-content: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-areas: "trop" "trooper" "gvader" "vader" "ckenobi" "kenobi" "cmando" "mando";
-    justify-items: center;
-    border-top: double red; } }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
   /* - - - - CONTENEDORES - - - - */
   .contenedor {
     display: grid;
@@ -428,11 +410,75 @@ html {
 html {
   font-size: 62, 5%; }
 
-.table {
-  color: #3c3cb9;
-  font-style: italic;
-  border-color: #3c3cb9;
-  margin-top: 5pc; }
+.footer_text {
+  background-color: #5c5c5c; }
+
+.header, .head_cont {
+  grid-area: header; }
+
+.footer__arte {
+  background-color: #5c5c5c;
+  grid-area: footer; }
+
+.catalogo {
+  grid-area: catalogo;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "ahsoka  power" "Tano Power" "grievous  boba" "Ggriev Cboba" "Vader  Hoth" "Dvader Bhoth"; }
+
+.Tano {
+  position: relative;
+  color: red;
+  grid-area: Tano; }
+  .Tano p {
+    color: gold; }
+
+.ahsoka {
+  grid-area: ahsoka; }
+
+.Cboba {
+  position: relative;
+  grid-area: Cboba; }
+  .Cboba p {
+    color: gold; }
+
+.boba {
+  grid-area: boba; }
+
+.Dvader {
+  grid-area: Dvader; }
+  .Dvader p {
+    color: gold; }
+
+.Vader {
+  grid-area: Vader; }
+
+.Power {
+  grid-area: Power; }
+  .Power p {
+    color: gold; }
+
+.power {
+  grid-area: power; }
+
+.Ggriev {
+  grid-area: Ggriev; }
+  .Ggriev p {
+    color: gold; }
+
+.grievous {
+  grid-area: grievous; }
+
+.Bhoth {
+  grid-area: Bhoth; }
+  .Bhoth p {
+    color: gold; }
+
+.Hoth {
+  grid-area: Hoth; }
 
 .CA {
   height: 200px;
@@ -457,6 +503,15 @@ html {
 .hoth {
   height: 200px;
   width: 200px; }
+
+@media screen and (max-width: 320px) {
+  .catalogo {
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto repeat(11);
+    grid-template-areas: "ahsoka" "Tano" "power" "Power" "grievous" "Ggriev" "boba" "Cboba" "Vader" "Dvader" "Hoth" "Bhoth"; } }
 
 * {
   margin: 0%;

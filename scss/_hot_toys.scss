@@ -7,15 +7,94 @@
 html {
     font-size: 62, 5%
 }
+.footer_text{
+    background-color: rgb(92, 92, 92);
+}
+.header{
+    grid-area: header;
+}
+.footer__arte{
+    background-color: rgb(92, 92, 92);
+    grid-area: footer;
+}
 
+.catalogo{
+    grid-area: catalogo;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto  ;
+    grid-template-areas: 
+    "ahsoka  power"
+    "Tano Power"
+    "grievous  boba"
+    "Ggriev Cboba"
+    "Vader  Hoth"
+    "Dvader Bhoth";
+}
+.Tano{
+    position: relative;
+    color: red;
+    grid-area: Tano;
+    p{
+        
+        color: gold;
+    }
+}
+.ahsoka{
+    grid-area: ahsoka;
+}
+.Cboba{
+    position: relative;
+    grid-area: Cboba;
+    p{
+       
+        color: gold;
+    }
+}
+.boba{
+  grid-area: boba;
+}
+.Dvader{
 
+    grid-area: Dvader;
+    p{
+        color: gold;
+    }
+}
+.Vader{
+    grid-area: Vader;
+}
+.Power{
+   
+    grid-area: Power;
+    p{
+        color: gold;
+    }
+}
+.power{
+    grid-area: power;
+}
+.Ggriev{
+ 
+    grid-area: Ggriev;
+    p{
+        color: gold;
+    }
+}
+.grievous{
+    grid-area: grievous;
+}
+.Bhoth{
 
-.table{
-    color: rgb(60, 60, 185);
-    font-style: italic;
-    border-color: rgb(60, 60, 185);
-    margin-top: 5pc;
-  
+    grid-area: Bhoth;
+    p{
+        color: gold;
+    }
+}
+.Hoth{
+    grid-area: Hoth;
 }
  .CA{
     height: 200px;
@@ -40,4 +119,32 @@ html {
 .hoth{
     height: 200px;
     width: 200px;
+}
+@media screen and (max-width: 320px) {
+    
+    
+
+
+
+    .catalogo{
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto repeat(11) ;
+        grid-template-areas: 
+        "ahsoka"
+        "Tano"
+        "power"
+        "Power"
+        "grievous"
+        "Ggriev"
+        "boba"
+        "Cboba"
+        "Vader"
+        "Dvader"
+        "Hoth"
+        "Bhoth";
+    
+}
 }
