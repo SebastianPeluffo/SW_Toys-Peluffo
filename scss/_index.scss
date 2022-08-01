@@ -133,67 +133,23 @@ h3{
    grid-template-rows: auto auto auto auto;
   grid-template-areas: 
   "trop  gvader"
-  "trooper vader"
-  "ckenobi   cmando"
-  "kenobi mando";
+  "ckenobi   cmando";
   justify-items: center;
  
    
     border-top: double red;
 }
 
-.img1{
-    @include size(150px, 200px, );
-    grid-area: img1;
-   
-}
-.img2{
-    @include size(150px, 200px, );
-    grid-area: img2;
 
-}
-.img3{
-    @include size(150px, 200px, );
-    grid-area: img3;
+
+@media screen and (min-width: 320px) {
+
   
-}
-.img4{
-    @include size(150px, 200px, );
-    grid-area: img4;
-   
-}
-.img5{
-@include size(150px, 200px, );
-}
-.img6{
-@include size(150px, 200px, );
-}
-.img7{
-@include size(150px, 200px, );
-}
-.img8{
-@include size(150px, 200px, );
-}
-.img9{
-@include size(150px, 200px, );
-}
-.img10{
-@include size(150px, 200px, );
-}
-.img11{
-@include size(150px, 200px, );
-}
-.img12{
-@include size(150px, 200px, );
-}
-@media screen and (max-width: 320px) {
-
-    /* - - - - CONTENEDORES - - - - */
 
     .contenedor {
         display: grid;
         width: 100%;
-        grid-template-columns: 1 auto;
+        grid-template-columns:  auto;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: 
         "header"
@@ -209,16 +165,12 @@ h3{
            
             display: grid;
            grid-template-columns: 100% ;
-           grid-template-rows: auto auto auto auto auto auto auto auto ;
+           grid-template-rows: auto auto auto auto ;
           grid-template-areas: 
           "trop"
-          "trooper"
-          "gvader"
-          "vader"
-          "ckenobi"
-          "kenobi"
-          "cmando"
-          "mando";
+          "gvader"         
+         "ckenobi"
+          "cmando";
           justify-items: center;
          
            
@@ -227,12 +179,12 @@ h3{
             }
             @media screen and (max-width: 720px) {
 
-                /* - - - - CONTENEDORES - - - - */
+              
             
                 .contenedor {
                     display: grid;
                     width: 100%;
-                    grid-template-columns: 1 auto;
+                    grid-template-columns: auto;
                     grid-template-rows: auto auto auto auto;
                     grid-template-areas: 
                     "header"
@@ -248,16 +200,12 @@ h3{
                        
                         display: grid;
                        grid-template-columns: 100% ;
-                       grid-template-rows: auto auto auto auto auto auto auto auto ;
+                       grid-template-rows: auto auto auto auto  ;
                       grid-template-areas: 
                       "trop"
-                      "trooper"
                       "gvader"
-                      "vader"
                       "ckenobi"
-                      "kenobi"
-                      "cmando"
-                      "mando";
+                      "cmando";
                       justify-items: center;
                      
                        
@@ -273,31 +221,42 @@ h3{
                color: gold;
                 }
              }
-             .trooper{
-                 position:relative;
-              
-                 background-color: rgb(255, 0, 0);
-                 grid-area: trooper;
-                 p{
-                     color: gold;
-                 }
-             }
-             .mando{
-                grid-area: mando;
-                 position: relative;
+             @media screen and (max-width: 1024px) {
+
+          
+            
+                .contenedor {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: auto;
+                    grid-template-rows: auto auto auto auto;
+                    grid-template-areas: 
+                    "header"
+                    "main"
+                    "imagenes"
+                    "footer"
+                    ;
+            }
+            .imagenes{
+                
+                        justify-content: center;
+                        width: 100%;
+                       
+                        display: grid;
+                       grid-template-columns: 100% ;
+                       grid-template-rows: auto auto ;
+                      grid-template-areas: 
+                      "trop gvader"
+                      "ckenobi cmando";
+                 justify-items: center;
+                    border-top: double red;
+                        }
+          }
+           
              
-                 background-color: rgb(255, 0, 0);
-                 p{
-                     color: gold;
-                 }
-             }
-             .kenobi{
-                grid-area: kenobi;
-                background-color:rgb(255, 0, 0) ;
-                p{
-                    color: gold;
-                }
-             }
+        
+           
+             
              .cmando{
                 margin-top: 100px;
                 grid-area: cmando;
@@ -313,4 +272,49 @@ h3{
             .trop{
                 grid-area: trop;
             }
+            .video{
+            justify-content: center;
+                
+            }
+            .video2{
+                justify-content: center;
+            }
+            .video3{
+                justify-content: center;
+            }
+            .card{
+               background-color: black;
+                margin-top: 10px;
+                grid-area: trop;
+            }
+            .card2{
+                margin-top: 10px;
+                grid-area: gvader;
+            }
+            .card3{
+                margin-top: 10px;
+                grid-area:ckenobi ;
+            }
+            .card4{
+                margin-top: 10px;
+                grid-area: cmando;
+            }
+.card-body{
+    background-color: black;
+    
+  
+}
+.card-img-top{
+    background-color: black;
+    height: 215px;
+    width: 155px;
+  
+
+    .1{
+       
+        background-color: black;
+    height: 300px;
+    width: 155px;
+    }
+}
 
