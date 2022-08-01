@@ -23,8 +23,39 @@ html {
     "Maul Rex";
 }
 .header__stwrs{
-    grid-area: heade;
+    height: 80px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(255, 0, 0);
+        z-index: 10000;
+        padding-left: 120px;
+        padding-right: 120px;
+        box-shadow: 0px 1px 20px 0px rgb(103, 102, 105);
+        grid-area: heade;
 }
+.encabezado_menu {
+    grid-area: menusw;
+    list-style: none;
+    font-size: 0;
+    font-style: italic;
+    margin-top: 30px;
+    color: $colorSecundario; }
+      li {
+      display: inline-block;
+      padding-left: 60px; }
+        a {
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: rgb(255, 0, 0); 
+                 &:hover {
+                 font-weight: 700;
+                 color: rgb(255, 0, 0); }
+    }
 .footer_text{
     grid-area: foot;
 }
@@ -50,7 +81,7 @@ html {
         width: 100%;
         height: 600px;
         margin-bottom: 30pc;
-       inset-block: center;
+      
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto;
@@ -58,6 +89,7 @@ html {
         "Ahas IG11"
         "Ivader HasKe"
         "Maul Rex";
+        justify-items: center;
     }
 }
 .carta{
@@ -77,10 +109,10 @@ html {
 }
 .HasKe{
     grid-area: HasKe;
-    img{
+    
         width: 200px;
         height: 200px;
-    }
+    
 }
 .Maul{
     grid-area: Maul;
