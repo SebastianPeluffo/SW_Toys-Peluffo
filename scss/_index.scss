@@ -133,18 +133,7 @@ h3{
     flex-direction: row;
     justify-content: space-around;
 }
-@media screen and (max-width:768px){
-    .imagenes{
-    flex-direction: column;
-    align-items: center;
-}
-    .videoContenedor{
-     flex-direction: column;
-     justify-content: center;
 
-}
-
-}
 @media screen and (max-width:425px){
     .parrafoAzul{
         margin: 15% 0;
@@ -173,10 +162,10 @@ h3{
             .trop{
                 /* grid-area: trop; */
             }
-         .videoContenedor{
+         .videosContenedor{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
 
         }
             .card{
@@ -210,5 +199,19 @@ h3{
     height: 300px;
     width: 155px;
     }
+}
+@media screen and (max-width:768px){
+    .imagenes{
+    flex-direction: column;
+    align-items: center;
+}
+    .videosContenedor{
+     flex-direction: column;
+    align-items: center;
+        .video{
+            margin: 5px 0;
+        }
+}
+
 }
 
