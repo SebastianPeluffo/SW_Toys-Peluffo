@@ -7,7 +7,7 @@
 html {
     font-size: 62, 5%
 }
-.contenedor {
+.contenedor_nosotros {
     background-image: url(../imagenes/fONDO.webp);
     }
 .coleccion{
@@ -28,4 +28,14 @@ html {
 }
 .hr{
     color: rgb(200, 255, 0);
+}
+.foto{
+     -ms-flex-align: center;
+    height: 300px;
+    width: 300px;
+}
+.foto2{
+    align-items: center;
+    height: 300px;
+    width: 300px;
 }

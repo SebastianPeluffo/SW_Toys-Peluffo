@@ -84,6 +84,9 @@ background-color: rgb(0, 0, 0);
 .main{
 grid-area: main;
 }
+.video{
+    justify-items: center;
+}
 .h3_contac{
 display: flex;
 justify-content: start;
@@ -140,9 +143,25 @@ h3{
     border-top: double red;
 }
 
+@media screen and (max-width: 768px) {  
+justify-content: center;
+width: 100%;
+
+display: grid;
+grid-template-columns: 100% ;
+grid-template-rows: auto auto auto auto ;
+grid-template-areas: 
+"trop"
+"gvader"         
+"ckenobi"
+"cmando";
+justify-items: center;
 
 
-@media screen and (min-width: 320px) {
+border-top: double red;
+}
+
+@media screen and (max-width: 425px) {
 
   
 
@@ -158,24 +177,7 @@ h3{
         "footer"
         ;
 }
-.imagenes{
-    
-            justify-content: center;
-            width: 100%;
-           
-            display: grid;
-           grid-template-columns: 100% ;
-           grid-template-rows: auto auto auto auto ;
-          grid-template-areas: 
-          "trop"
-          "gvader"         
-         "ckenobi"
-          "cmando";
-          justify-items: center;
-         
-           
-            border-top: double red;
-            }
+
             }
             @media screen and (max-width: 720px) {
 
@@ -199,13 +201,11 @@ h3{
                         width: 100%;
                        
                         display: grid;
-                       grid-template-columns: 100% ;
-                       grid-template-rows: auto auto auto auto  ;
+                       grid-template-columns: 50% 50% ;
+                       grid-template-rows: auto auto  ;
                       grid-template-areas: 
-                      "trop"
-                      "gvader"
-                      "ckenobi"
-                      "cmando";
+                      "trop gvader"
+                      "ckenobi cmando";
                       justify-items: center;
                      
                        
@@ -221,14 +221,13 @@ h3{
                color: gold;
                 }
              }
-             @media screen and (max-width: 1024px) {
+             @media screen and (max-width: 768px) {
 
           
             
                 .contenedor {
                     display: grid;
                     width: 100%;
-                    grid-template-columns: auto;
                     grid-template-rows: auto auto auto auto;
                     grid-template-areas: 
                     "header"
