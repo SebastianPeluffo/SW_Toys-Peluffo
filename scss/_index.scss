@@ -26,7 +26,7 @@ footer{
 
     display: flex;
     flex-direction: row;
-  /* grid-area: footer; */
+  grid-area: footer;
     margin: 10px;
 }
 .footer_text{
@@ -128,21 +128,35 @@ h3{
     /* grid-area: parrafoAzul; */
 }
 .imagenes{
-    justify-content: center;
     width: 100%;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media screen and (max-width:768px){
+    .imagenes{
+    flex-direction: column;
+    align-items: center;
+}
+    .videoContenedor{
+     flex-direction: column;
+     justify-content: center;
 
-  justify-items: center;
- 
-   
-    border-top: double red;
 }
 
-
+}
+@media screen and (max-width:425px){
+    .parrafoAzul{
+        margin: 15% 0;
            
-             
-        
+    }           
+}
+@media screen and (max-width:425px){
+    .parrafoAzul{
+        margin: 15% 0;
            
+    }           
+}    
              
              .cmando{
                 margin-top: 100px;
@@ -159,16 +173,12 @@ h3{
             .trop{
                 /* grid-area: trop; */
             }
-            .video{
-            justify-content: center;
-                
-            }
-            .video2{
-                justify-content: center;
-            }
-            .video3{
-                justify-content: center;
-            }
+         .videoContenedor{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
             .card{
                background-color: black;
                 margin-top: 10px;
