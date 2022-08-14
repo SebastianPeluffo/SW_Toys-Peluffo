@@ -17,7 +17,9 @@
     color: rgba(255, 255, 255, 0.678);
     padding-top: 1.5pc;
     padding-bottom: 1.5pc;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-top:double rgb(255, 255, 255);
     border-left: double rgb(255, 255, 255);
     border-right: double rgb(255, 255, 255);
@@ -36,7 +38,9 @@
 
    
 }
-
+input{
+    margin: 10px;
+}
 .prioridades{
     color: bisque;
     display: flex;
@@ -53,7 +57,9 @@
 }
 .love{
     color: rgb(255, 255, 255);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-left: double rgb(255, 255, 255);
     border-right: double rgb(255, 255, 255);
     border-bottom: double rgb(255, 255, 255);
@@ -62,12 +68,21 @@
 }
 
 
-.fieldset{
+.fieldset1{
+    margin: 0 20%;
     color: $colorPrincipal;
-    background-color: $colorSecundario;
-    
+    background-color: grey;
+  
+    background-image: url(../imagenes/Empire-.png);
+    .Forma{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
        
 }
+
 .terms{
     color: gold;
   
@@ -81,8 +96,16 @@
     color: brown;
 }
 .domicilio{
+    margin: 0 20%;
    color: gold;
    background-color: $colorSecundario;
+   background-image: url(../imagenes/SW_Toys.png);
+
+   .Forma{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
    
  
 }
@@ -171,4 +194,12 @@
     }
     .footer_cont{
         background-color: rgb(92, 92, 92);
+    }
+    .buton{
+        display: flex;
+        flex-direction: row;
+        justify-content:  center;
+    }
+    .reset{
+        background-color: $colorSecundario;
     }

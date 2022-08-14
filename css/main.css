@@ -14,7 +14,9 @@
   color: rgba(255, 255, 255, 0.678);
   padding-top: 1.5pc;
   padding-bottom: 1.5pc;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-top: double white;
   border-left: double white;
   border-right: double white; }
@@ -26,6 +28,9 @@
   align-items: center; }
   .redes li {
     background-color: black; }
+
+input {
+  margin: 10px; }
 
 .prioridades {
   color: bisque;
@@ -42,15 +47,23 @@
 
 .love {
   color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-left: double white;
   border-right: double white;
   border-bottom: double white;
   margin-bottom: 20px; }
 
-.fieldset {
+.fieldset1 {
+  margin: 0 20%;
   color: gold;
-  background-color: red; }
+  background-color: grey;
+  background-image: url(../imagenes/Empire-.png); }
+  .fieldset1 .Forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .terms {
   color: gold; }
@@ -59,8 +72,14 @@
   color: brown; }
 
 .domicilio {
+  margin: 0 20%;
   color: gold;
-  background-color: red; }
+  background-color: red;
+  background-image: url(../imagenes/SW_Toys.png); }
+  .domicilio .Forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .body__contacto {
   background-image: url(../imagenes/AAAAAAAAAA.jpg);
@@ -116,6 +135,14 @@ a {
 
 .footer_cont {
   background-color: #5c5c5c; }
+
+.buton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.reset {
+  background-color: red; }
 
 * {
   margin: 0%;
@@ -531,23 +558,3 @@ a {
 .carta {
   background-color: black;
   margin-top: 20px; }
-
-.Ahsoka {
-  grid-area: Ahas; }
-
-.IG11 {
-  grid-area: IG11; }
-
-.Ivader {
-  grid-area: Ivader; }
-
-.HasKe {
-  grid-area: HasKe;
-  width: 200px;
-  height: 200px; }
-
-.Maul {
-  grid-area: Maul; }
-
-.Rex {
-  grid-area: Rex; }

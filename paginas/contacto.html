@@ -58,7 +58,7 @@
       </header>
 <Section class="info">
               <!--section con informacion de la pagina-->
-             <h2 class="nosotros">Interes</h2>
+             <h2 class="nosotros">Intereses</h2>
                 <p class="love">Nuestro amor por Star Wars es tan grande que decidimos compartirrlo con el mundo y que mejor manera que vendiendo coleccionables de esta hermosa franquicia </p>
                     <ol class="prioridades">
                        <h2 class="prio__titulo"> Prioridades en nuestra vida</h2>
@@ -84,38 +84,36 @@
     
   <!--fieldset para la informacion de contacto-->
 <div class="field">  
-    <fieldset class="fieldset">
+    <fieldset class="fieldset1">
 
-        <legend><hr2 class="Fcontact">Formulario de contacto </hr2></legend>
-        <form>
-            <ol class="Forma">
-                    <li>
-                      <label  for="name">name:</label>
-                      <input type="text" placeholder="name" name="name"></li>
-    
-                  
-                    <li>
-                      <label for="last name">last name: </label>
-                      <input type="text" placeholder="last name" name="last name"></li>
+        <legend>Formulario de contacto </legend>
+        <form class="Forma">
+           
+                      <label  for="name"></label>
+                      <input type="text" required placeholder="name" name="name">
+
+                      <label for="Last name"> </label>
+                      <input type="text" required placeholder="Last Name" name="last name">
    
                    
-                    <li>
-                      <label for="email">email:</label>
-                      <input type="email" placeholder="email" name="email"></li>
+            
+                      <label for="Email"></label>
+                      <input type="email" required placeholder="email" name="email">
     
-                    <li>
-                      <label for="password">password</label>
-                      <input type="password" required placeholder="password" name="password"></li>
+                
+                      <label for="Password"></label>
+                      <input type="password" required placeholder="Password" name="Password">
 
 <!--inputs de genero-->
-                    <li><label for="genero">indique su genero</label></li>
+                   <label for="genero">indique su genero</label>
 
-                    <li><input type="radio" value="Femenino" name="genero"> Femenino</li>
+               <input type="radio"  value="Femenino" name="genero"> Femenino
 
-                    <li><input type="radio" value="Masculino" name="genero"> Masculino</li>
+                  <input type="radio" value="Masculino" name="genero"> Masculino
 
-                    <li><input type="radio" value="otro" name="genero"> Otro</li>
-            </ol>
+                    <input type="radio" value="otro" name="genero"> Otro
+        </form>           
+            
     </fieldset>
 </div>
 
@@ -123,33 +121,33 @@
 <div class="domi">
     <fieldset class="domicilio">
       <legend>datos de domicilio</legend>
-        <ol>
-         
-            <li>
-              <label for="domicilioF">domicilio</label>
-              <input type="text" placeholder="domicilio" name="domicilio">
-            </li>
+     
+        <form class="Forma">
+          
+              <label for="DomicilioF"></label>
+              <input type="text" required placeholder="Domicilio" name="Domicilio">
+            
       
           
-            <li>
-              <label for="domicilio">codigo postal</label>
-              <input type="text" placeholder="codigo postal" name="codigo postal">
-            </li>
+            
+              <label for="Domicilio"></label>
+              <input type="text" required placeholder="codigo postal" name="codigo postal">
+            
          
-            <li>
-              <label for="domicilio">Ciudad</label>
-              <input type="text" placeholder="ciudad" name="ciudad">
-            </li>
+            
+              <label for="Ciudad"></label>
+              <input type="text" required placeholder="Ciudad" name="Ciudad">
+            
       
-        <label for="pais"> indique su pais</label><br>
-            <li>
+        <label for="pais"> indique su pais</label>
+            
               
-              <select name="pais"></li>
+              <select name="pais">
               <option value="ARG">Argentina</option>
               <option value="CH">Chile</option>
               <option value="COL">Colombia</option>
         </select>
-        </ol>
+      </form>
 
   </fieldset>
   <div class="termo">   
@@ -157,22 +155,18 @@
       <fieldset class="terms"><Legend class="t">Terminos y condiciones</Legend>
       
       <p class="terminos"> Términos y condiciones
-        Bienvenido al sitio web de SW Toys Inc. (el "Sitio"). El Sitio se proporciona como un servicio a nuestros clientes. Revise los siguientes términos y condiciones de uso, que rigen su uso del Sitio (los "Términos"). El acceso y uso del Sitio está condicionado a la aceptación y cumplimiento de estos Términos. Al acceder al Sitio, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de estos Términos, entonces no tiene permiso para acceder al Sitio. Al usar el Sitio, usted declara y garantiza que es mayor de edad para formar un contrato vinculante o tiene el consentimiento de un padre o tutor mayor de edad.
-        
-        CUENTAS
-        
-        Cuando crea una cuenta en nuestro Sitio, declara y garantiza que tiene más de 18 años y que la información que nos proporciona es precisa, completa y actual en todo momento. Nos reservamos el derecho de rechazar el servicio o cancelar cuentas a nuestro exclusivo criterio.
-         
+        Bienvenido al sitio web de SW Toys Inc. (el "Sitio"). El Sitio se proporciona como un servicio a nuestros clientes. Revise los siguientes términos y condiciones de uso, que rigen su uso del Sitio (los "Términos"). El acceso y uso del Sitio está condicionado a la aceptación y cumplimiento de estos Términos. Al acceder al Sitio, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de estos Términos, entonces no tiene permiso para acceder al Sitio. Al usar el Sitio, usted declara y garantiza que es mayor de edad... 
       </p>
     </fieldset>
-      <label class="aceptar" for="terminos">aceptas todo?</label>
+      <label class="aceptar" for="terminos">Aceptas todo?</label>
       
       <input type="checkbox" required name="terminos" value="1">
   </div>
       <!--inputs para enviar la informacion insertada-->
-      <input type="submit"value=" Envai este formulario">
-      <input type="reset" value="Resetear este formulario">
-
+    <div class="buton">
+      <input class="reset" type="submit"value=" Enviar este formulario">
+      <input class="reset" type="reset" value="Resetear este formulario">
+    </div>
     </form>
     <a href="#arriba">Volver arriba</a>
     <hr>
