@@ -46,26 +46,25 @@ html {
             grid-area: catalogo;
             justify-items: center;
             width: 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto  ;
-            grid-template-areas: 
-            "ahsoka  power"
-            "Tano Power"
-            "power"
-            "Power"
-            "grievous"
-            "Ggriev"
-            "boba"
-            "Cboba"
-            "Vader"
-            "Dvader"
-            "Hoth"
-            "Bhoth";
- 
 }
     
 }
+@media screen and (max-width:425px) {
+
+    .DA{
+        width: 100%;
+        height: 70%;
+        margin: 0 15px
+    }
+}
+@media screen and (max-width:320px) {
+
+    .DA{
+        width: 100%;
+        height: 50%;
+    }
+}
+
 .Tano{
     position: relative;
     color: red;
