@@ -2,20 +2,10 @@
 $colorPrincipal: gold;
 $colorSecundario :  rgb(255, 0, 0);
 
-$redes: (
-    Twitter: rgb(0, 106, 255),
-    Instagram: rgb(251, 0, 222),
-    Youtube: red,
-    Twitch: purple,
-    Mail: rgb(234, 165, 5)
-);
 
-@each $key, $valor in $redes {
-    .#{$key}{
-        color: $valor;
-    }
-    
-}
+
+
+
 
 
 @mixin size($width, $height){

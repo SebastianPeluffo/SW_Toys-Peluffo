@@ -60,16 +60,12 @@
     margin-bottom: 20px;
 
 }
-.Fcontact{
-    color: rgb(96, 9, 238);
-    background-color: gold;
-    
-}
+
 
 .fieldset{
-    color: rgba(12, 12, 194, 0.692);
-    background-color: gold;
-    background-image: url(../imagenes/SW_Toys.png);
+    color: $colorPrincipal;
+    background-color: $colorSecundario;
+    
        
 }
 .terms{
@@ -85,13 +81,13 @@
     color: brown;
 }
 .domicilio{
-    color: gold;
-   background-color: blue;
-   background-image: url(../imagenes/Empire-.png);
+   color: gold;
+   background-color: $colorSecundario;
+   
  
 }
 .body__contacto{
-    background-image: url(../imagenes/fONDO.webp);
+    background-image: url(../imagenes/AAAAAAAAAA.jpg);
     display: grid;
     grid-template-columns: 100%;
    grid-template-rows: auto auto auto auto auto auto auto auto auto;

@@ -17,10 +17,13 @@
     <!--cuerpo de la pagina-->
 <body class="body__contacto">
     
-    <div>
+    <div id="arriba">
 
     <!--titulo-->
     <header class="head_cont">
+      <a href="../index.html">
+        <img class="R2D2" src="../imagenes/SW_Toys.png" alt="pageicon">
+      </a>
         <h1 class="h1 animate__animated animate__fadeInUpBig">Contacto </h1>
         <!--menu--> 
         <nav class="navbar navbar-expand-lg navbar-light bg-dark encabezado__menu">
@@ -55,7 +58,7 @@
       </header>
 <Section class="info">
               <!--section con informacion de la pagina-->
-             <h2 class="nosotros">Nosotros</h2>
+             <h2 class="nosotros">Interes</h2>
                 <p class="love">Nuestro amor por Star Wars es tan grande que decidimos compartirrlo con el mundo y que mejor manera que vendiendo coleccionables de esta hermosa franquicia </p>
                     <ol class="prioridades">
                        <h2 class="prio__titulo"> Prioridades en nuestra vida</h2>
@@ -121,16 +124,27 @@
     <fieldset class="domicilio">
       <legend>datos de domicilio</legend>
         <ol>
-          <label for="domicilioF">domicilio</label>
-            <li><input type="text" placeholder="domicilio" name="domicilio"></li>
+         
+            <li>
+              <label for="domicilioF">domicilio</label>
+              <input type="text" placeholder="domicilio" name="domicilio">
+            </li>
       
-          <label for="domicilio">codigo postal</label>
-            <li><input type="text" placeholder="codigo postal" name="codigo postal"></li>
-          <label for="domicilio">Ciudad</label>
-            <li><input type="text" placeholder="ciudad" name="ciudad"></li>
+          
+            <li>
+              <label for="domicilio">codigo postal</label>
+              <input type="text" placeholder="codigo postal" name="codigo postal">
+            </li>
+         
+            <li>
+              <label for="domicilio">Ciudad</label>
+              <input type="text" placeholder="ciudad" name="ciudad">
+            </li>
       
         <label for="pais"> indique su pais</label><br>
-            <li><select name="pais"></li>
+            <li>
+              
+              <select name="pais"></li>
               <option value="ARG">Argentina</option>
               <option value="CH">Chile</option>
               <option value="COL">Colombia</option>
@@ -148,14 +162,7 @@
         CUENTAS
         
         Cuando crea una cuenta en nuestro Sitio, declara y garantiza que tiene más de 18 años y que la información que nos proporciona es precisa, completa y actual en todo momento. Nos reservamos el derecho de rechazar el servicio o cancelar cuentas a nuestro exclusivo criterio.
-        
-        Al crear una Cuenta en nuestro Sitio, acepta suscribirse a boletines, materiales promocionales o de marketing y otra información que podamos enviar. Sin embargo, puede optar por no recibir ninguna o todas estas comunicaciones de nuestra parte siguiendo el enlace para cancelar la suscripción o las instrucciones proporcionadas en cualquier correo electrónico que enviemos.
-        
-        Usted es responsable de mantener la confidencialidad de su cuenta y contraseña, lo que incluye, entre otros, restringir el acceso a su computadora o cuenta. No puede compartir su cuenta, nombre de usuario o contraseña con ninguna otra parte ni usar la cuenta, el nombre de usuario o la contraseña de ninguna otra parte. Usted será el único responsable de todas las actividades realizadas y todas las obligaciones contraídas por usted o a través de su cuenta. Debe notificarnos inmediatamente al darse cuenta de cualquier violación de seguridad o uso no autorizado de su cuenta.
-        
-        No puede usar un nombre de usuario como el nombre de otra persona o entidad o que no esté legalmente disponible para su uso, un nombre o marca comercial que esté sujeto a cualquier derecho de otra persona o entidad que no sea usted, sin la autorización correspondiente. No puede usar como nombre de usuario ningún nombre que sea ofensivo, vulgar u obsceno.
-        
-        En la medida en que el Sitio le permita vincular su cuenta a cualquier red social u otras cuentas en línea, solo podrá vincular sus propias cuentas. Al vincular sus otras cuentas, nos autoriza expresamente a acceder a la información de su cuenta desde esas cuentas de terceros, en su nombre como su agente, y nos permite acceder, usar y, en algunos casos, almacenar la información de su cuenta.
+         
       </p>
     </fieldset>
       <label class="aceptar" for="terminos">aceptas todo?</label>
@@ -167,11 +174,13 @@
       <input type="reset" value="Resetear este formulario">
 
     </form>
+    <a href="#arriba">Volver arriba</a>
+    <hr>
 </div>
 
 
 <!--footer-->
-<hr>
+
 <footer class="footer_cont"><p class="footer_text">El contenido de serie, las especificaciones del producto, las fechas de lanzamiento y los precios están sujetos a cambios. SW Toys es la marca registrada y los derechos de autor de SW Toys Inc.
 Todos los derechos reservados.</p>
 
