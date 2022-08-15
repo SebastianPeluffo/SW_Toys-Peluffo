@@ -74,6 +74,7 @@ input{
     background-color: grey;
   
     background-image: url(../imagenes/Empire-.png);
+    background-repeat: no-repeat;
     .Forma{
         display:flex;
         flex-direction: column;
@@ -139,40 +140,13 @@ input{
     grid-area: domi;
 }
 
-.head_cont{
-    grid-area: head_cont;
-@extend .header;
-}
+
 
 .info{
     grid-area: info;
 }
 
-.encabezado__menu {
-    list-style: none;
-    font-size: 0;
-  transform: translate(-8px, -8px);
-    background-color: red;
- }
-  
-    li {
-        display: inline-block;
-        padding-left: 60px;
 
- }
-  
-          a{
-            font-size: 18px;
-            font-weight: 300px;
-            text-decoration: none;
-            color: red;
-    
- 
-  
-                &:hover {
-                font-weight: 700;
-                color: red;}
-                }
  
  @media screen and (max-width: 500px) {
     .body__contacto{

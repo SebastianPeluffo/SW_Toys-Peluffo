@@ -59,7 +59,8 @@ input {
   margin: 0 20%;
   color: gold;
   background-color: grey;
-  background-image: url(../imagenes/Empire-.png); }
+  background-image: url(../imagenes/Empire-.png);
+  background-repeat: no-repeat; }
   .fieldset1 .Forma {
     display: flex;
     flex-direction: column;
@@ -101,30 +102,8 @@ input {
 .domi {
   grid-area: domi; }
 
-.head_cont {
-  grid-area: head_cont; }
-
 .info {
   grid-area: info; }
-
-.encabezado__menu {
-  list-style: none;
-  font-size: 0;
-  transform: translate(-8px, -8px);
-  background-color: red; }
-
-li {
-  display: inline-block;
-  padding-left: 60px; }
-
-a {
-  font-size: 18px;
-  font-weight: 300px;
-  text-decoration: none;
-  color: red; }
-  a:hover {
-    font-weight: 700;
-    color: red; }
 
 @media screen and (max-width: 500px) {
   .body__contacto {
@@ -147,7 +126,9 @@ a {
 * {
   margin: 0%;
   padding: 0%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
 
 html {
   font-size: 62, 5%; }
@@ -176,48 +157,24 @@ footer {
 .contenedor {
   background-image: url(../imagenes/AAAAAAAAAA.jpg); }
 
-.header, .head_cont {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  position: sticky;
-  top: 0px;
-  background-color: red;
-  z-index: 10000;
-  padding-left: 120px;
-  padding-right: 120px;
-  box-shadow: 0px 1px 20px 0px #676669;
-  /*  grid-area: header; */ }
-
 .R2D2 {
-  width: 80px;
-  height: 80px; }
+  width: 50px; }
 
-.nav-item li {
-  color: gold; }
+.header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 2rem; }
 
-.menu {
-  /* grid-area: menuu; */
-  list-style: none;
-  font-size: 0;
-  font-style: italic;
-  margin-top: 30px;
-  color: red; }
-
-li {
-  display: inline-block;
-  padding-left: 60px; }
-
-a {
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  color: red; }
-  a:hover {
-    font-weight: 700;
-    color: red; }
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: .25rem .75rem; }
+  .nav-item a {
+    outline: none;
+    text-decoration: none;
+    color: gold; }
 
 .table {
   background-color: #ff4400;
@@ -274,23 +231,11 @@ h3 {
   .parrafoAzul {
     margin: 15% 0; } }
 
-@media screen and (max-width: 425px) {
-  .parrafoAzul {
-    margin: 15% 0; } }
-
 .cmando {
-  margin-top: 100px;
-  /*   grid-area: cmando; */ }
+  margin-top: 100px; }
 
 .ckenobi {
-  margin-top: 100px;
-  /*   grid-area: ckenobi; */ }
-
-.gvader {
-  /* grid-area: gvader; */ }
-
-.trop {
-  /* grid-area: trop; */ }
+  margin-top: 100px; }
 
 .videosContenedor {
   display: flex;
@@ -299,20 +244,16 @@ h3 {
 
 .card {
   background-color: black;
-  margin-top: 10px;
-  /*   grid-area: trop; */ }
+  margin-top: 10px; }
 
 .card2 {
-  margin-top: 10px;
-  /* grid-area: gvader; */ }
+  margin-top: 10px; }
 
 .card3 {
-  margin-top: 10px;
-  /* grid-area:ckenobi ; */ }
+  margin-top: 10px; }
 
 .card4 {
-  margin-top: 10px;
-  /* grid-area: cmando; */ }
+  margin-top: 10px; }
 
 .card-body {
   background-color: black; }
@@ -326,7 +267,7 @@ h3 {
     height: 300px;
     width: 155px; }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .imagenes {
     flex-direction: column;
     align-items: center; }
@@ -335,6 +276,11 @@ h3 {
     align-items: center; }
     .videosContenedor .video {
       margin: 5px 0; } }
+
+.varriba {
+  outline: none;
+  text-decoration: none;
+  color: red; }
 
 * {
   margin: 0%;
@@ -348,6 +294,13 @@ html {
   background-image: url(../imagenes/AAAAAAAAAA.jpg); }
 
 .coleccion {
+  color: gold; }
+
+.Us {
+  color: gold;
+  font-style: italic;
+  text-align: center;
+  font-size: 30px;
   color: gold; }
 
 .historia__titulo {
@@ -375,6 +328,16 @@ html {
   height: 300px;
   width: 300px; }
 
+.foto_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.foto_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -389,7 +352,7 @@ html {
 .footer_text {
   background-color: #5c5c5c; }
 
-.header, .head_cont {
+.header {
   grid-area: header_arte; }
 
 .footer__arte {
@@ -407,23 +370,6 @@ html {
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas: "ahsoka  power" "Tano Power" "grievous  boba" "Ggriev Cboba" "Vader  Hoth" "Dvader Bhoth"; }
-
-@media screen and (max-width: 768px) {
-  .catalogo {
-    grid-area: catalogo;
-    justify-items: center;
-    width: 100%; } }
-
-@media screen and (max-width: 425px) {
-  .DA {
-    width: 100%;
-    height: 70%;
-    margin: 0 15px; } }
-
-@media screen and (max-width: 320px) {
-  .DA {
-    width: 100%;
-    height: 50%; } }
 
 .Tano {
   position: relative;
@@ -476,29 +422,39 @@ html {
 .Hoth {
   grid-area: Hoth; }
 
-.CA {
-  height: 200px;
-  width: 200px; }
-
 .DA {
   height: 200px;
   width: 200px; }
 
-.CTP {
-  height: 200px;
-  width: 200px; }
+@media screen and (max-width: 768px) {
+  .catalogo {
+    grid-area: catalogo;
+    justify-items: center;
+    width: 100%; }
+  .Arte {
+    font-size: 50px; } }
 
-.Kashyyyk {
-  height: 200px;
-  width: 200px; }
+@media screen and (max-width: 425px) {
+  .DA {
+    width: 80%;
+    height: 100%;
+    margin: 0 15px; }
+  .encabezado__menu {
+    width: 50%;
+    height: 30%; }
+  .footer__arte {
+    background-color: #5c5c5c;
+    width: 80%;
+    grid-area: footer_arte; }
+  .Arte {
+    font-size: 40px; } }
 
-.IA {
-  height: 200px;
-  width: 200px; }
-
-.hoth {
-  height: 200px;
-  width: 200px; }
+@media screen and (max-width: 320px) {
+  .DA {
+    width: 70%;
+    height: 100%; }
+  .Arte {
+    font-size: 40px; } }
 
 * {
   margin: 0%;
@@ -514,42 +470,6 @@ html {
   flex-direction: column;
   flex-direction: row;
   justify-content: space-around; }
-
-.header__stwrs {
-  height: 80px;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  position: sticky;
-  top: 0px;
-  background-color: red;
-  z-index: 10000;
-  padding-left: 120px;
-  padding-right: 120px;
-  box-shadow: 0px 1px 20px 0px #676669;
-  grid-area: heade; }
-
-.encabezado_menu {
-  grid-area: menusw;
-  list-style: none;
-  font-size: 0;
-  font-style: italic;
-  margin-top: 30px;
-  color: red; }
-
-li {
-  display: inline-block;
-  padding-left: 60px; }
-
-a {
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  color: red; }
-  a:hover {
-    font-weight: 700;
-    color: red; }
 
 .footer_text {
   grid-area: foot; }
